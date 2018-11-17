@@ -6,7 +6,7 @@ const todos = [
   'Clean up lovli.js',
   'Make lovli.js even simpler.',
   'Create a short tutorial.',
-  'Fix multiline-todos in lovli.',
+  'Fix multiline-Todos in lovli.',
   'Praise horizon.',
   'Build a shrine for horizon.',
   'Invest in shrimps.',

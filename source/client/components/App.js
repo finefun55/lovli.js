@@ -1,7 +1,7 @@
 import React from 'react';
 import 'static/vendor/font-awesome/css/font-awesome.min.css';
 import styles from 'styles/app';
-import Todo from './todos/Todo';
+import Todo from './Todos/Todo';
 
 const App = () => (
   <div>

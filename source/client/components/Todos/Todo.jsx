@@ -94,13 +94,13 @@ export default class Todo extends React.Component {
             className={todoStyles.handler}
             onClick={this.sortBy('text')}
           >
-            名称
+            name
           </div>
           <div
             className={todoStyles.handler}
             onClick={this.sortBy('createTime')}
           >
-            创建时间
+            time
           </div>
         </div>
         <TodoList
@@ -113,13 +113,13 @@ export default class Todo extends React.Component {
             className={todoStyles.handler}
             onClick={this.page('below')}
           >
-            {'< 上一页'}
+            {'<'}
           </div>
           <div
             className={todoStyles.handler}
             onClick={this.page('above')}
           >
-            {'下一页 >'}
+            {'>'}
           </div>
         </div>
         <AddTodoButton />

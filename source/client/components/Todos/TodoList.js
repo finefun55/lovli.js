@@ -58,9 +58,5 @@ class TodoList extends React.Component {
 }
 
 export default subscribe({
-  mapDataToProps,
-  // you can connect to redux state too
-  mapStateToProps:(state, props) => {
-    return props;
-  }
+  mapDataToProps
 })(TodoList);
