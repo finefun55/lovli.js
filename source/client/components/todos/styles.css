@@ -63,7 +63,7 @@
   }
 }
 
-.button {
+.button, .handler {
   composes: tCenter from 'styles/app';
   display: block;
   box-sizing: border-box;
@@ -81,6 +81,17 @@
 
     background-color: #d03117;
   }
+}
+
+.handerWarp {
+  display: flex;
+}
+
+.handler {
+  width: 50%;
+  background: lightgray;
+  font-size: 14px;
+  padding: 8px;
 }
 
 .input {

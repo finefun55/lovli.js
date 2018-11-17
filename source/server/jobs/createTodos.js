@@ -20,7 +20,7 @@ const todos = [
 
 const createRandomTodo = () => {
   const rand = Math.round(Math.random() * todos.length - 1, 0);
-  r.table('todos').insert({ text: todos[rand], $hz_v$: 1 }).run();
+  r.table('todos').insert({ text: todos[rand], createTime: Date.now(), $hz_v$: 1, }).run();
 };
 
 const every2minutes = later.parse.text('every 2 minutes');

@@ -1,12 +1,12 @@
 import React from 'react';
-import { subscribe } from 'horizon-react';
+import { subscribe } from 'horizon-react';
 import { createDoc } from 'horizon-react/lib/utils';
 
 import styles from './styles';
 
 const AddTodoButton = (props) => {
   const collection = props.horizon('todos');
-  const addTodo = (t) => createDoc(collection, { text: t });
+  const addTodo = (t) => createDoc(collection, { text: t, createTime: Date.now() });
 
   return (
     <div>
@@ -16,13 +16,21 @@ const AddTodoButton = (props) => {
         type="text"
         placeholder="A new todo item..."
         autoFocus
-        onKeyPress={function(e) { if (e.key === 'Enter') { addTodo(e.target.value); e.target.value = ''; } }}
+        onKeyPress={function (e) {
+          if (e.key === 'Enter') {
+            addTodo(e.target.value);
+            e.target.value = '';
+          }
+        }}
       />
       <div
         className={styles.button}
-        onClick={() => { addTodo(document.getElementById('todo-text').value); document.getElementById('todo-text').value = ''; }}
+        onClick={() => {
+          addTodo(document.getElementById('todo-text').value);
+          document.getElementById('todo-text').value = '';
+        }}
       >
-      + Add todo
+        + Add todo
       </div>
     </div>
   );

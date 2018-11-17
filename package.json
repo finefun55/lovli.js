@@ -3,7 +3,7 @@
   "version": "0.9.0",
   "license": "MIT",
   "description": "A boilerplate for developing react applications with rethinkdb/horizon as realtime database and express for the server.",
-  "repository": "https://github.com/flipace/lovli.js",
+  "repository": "https://github.com/finefun55/lovli.js.git",
   "contributors": [
     {
       "name": "Patrick Neschkudla",
@@ -50,9 +50,10 @@
     "webpack-dev-server": "1.14.1"
   },
   "dependencies": {
-    "@horizon/client": "2.0.0",
-    "@horizon/server": "2.0.0",
+    "@horizon/client": "^2.0.0",
+    "@horizon/server": "^2.0.0",
     "express": "^4.13.4",
+    "fast-deep-equal": "^2.0.1",
     "file-loader": "^0.8.5",
     "horizon-react": "0.5.0",
     "immutable": "3.8.1",
